@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#f6f8fa"/>
+  <rect x="72" y="72" width="72" height="72" rx="36" fill="#405c80"/>
+  <text x="108" y="117" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" fill="#fff">SS</text>
+  <text x="72" y="244" font-family="Arial, sans-serif" font-size="25" font-weight="600" fill="#405c80">SHRUTHI SRIDHARA</text>
+  <text x="72" y="340" font-family="Arial, sans-serif" font-size="62" fill="#242b35">Senior Engineering Leader</text>
+  <text x="72" y="418" font-family="Arial, sans-serif" font-size="32" fill="#596575">Building teams that ship complex things reliably.</text>
+  <line x1="72" y1="520" x2="1128" y2="520" stroke="#d8dee6"/>
+  <text x="72" y="566" font-family="Arial, sans-serif" font-size="21" fill="#6b7684">18+ years · Global programmes · Netherlands</text>
+</svg>

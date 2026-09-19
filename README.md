@@ -1,29 +1,28 @@
-# Welcome to your Lovable project
+# Shruthi Sridhara — Engineering Leadership Portfolio
 
-This project was built with [Lovable](https://lovable.dev).
+A responsive, recruiter-focused professional portfolio built with React, TypeScript, TanStack Start, and Tailwind CSS.
 
-## Build with Lovable
+## Local development
 
-Open your project in the [Lovable editor](https://lovable.dev) and keep building.
-
-- **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: connect the project to GitHub and every change made in Lovable is committed straight to your repository.
-- **Full ownership**: this code is yours. Push to your repository and your changes sync back into Lovable, ready for your next prompt.
-
-## Development
-
-Prefer working locally? You need Node.js and npm — [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating).
+Requirements: Node.js 20+ and Bun.
 
 ```sh
-git clone <this-repository-url>
-cd <repository-name>
-npm i
-npm run dev
+bun install
+bun run dev
 ```
 
-## Built with
+The local development site is available at `http://localhost:3000` by default.
 
-- TanStack Start
-- TypeScript
-- React
-- Tailwind CSS
+## Production build
+
+```sh
+bun run build
+bun run preview
+```
+
+## Project structure
+
+- `src/components/portfolio.tsx` — portfolio content and reusable sections
+- `src/routes/index.tsx` — home page route and metadata
+- `src/styles.css` — design tokens and responsive presentation
+- `public/` — favicon and social preview asset
