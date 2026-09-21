@@ -229,6 +229,7 @@ a { color: inherit; }
   .metric:nth-child(3) { padding-left: 0; }
   .section-heading { grid-template-columns: 1fr; }
   .operating-grid, .skills-grid { grid-template-columns: 1fr 1fr; }
+  .learning-grid { grid-template-columns: 1fr; }
   .engagement-grid { grid-template-columns: 1fr; }
   .principles-layout { grid-template-columns: 1fr; }
   .principles-layout .section-heading { position: static; }
