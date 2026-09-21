@@ -104,6 +104,30 @@ const experience = [
   },
 ];
 
+const engagementModels = [
+  {
+    number: "01",
+    title: "Full-time leadership",
+    description:
+      "Own an engineering org end-to-end: hiring, delivery, culture, roadmap. Best fit for teams building long-term technical and people capability.",
+    tag: "Long-term capability",
+  },
+  {
+    number: "02",
+    title: "Interim / fractional leadership",
+    description:
+      "Step into a gap — a departed manager, a stalled programme, a team scaling faster than its structure. Defined engagement, embedded like a full-time leader.",
+    tag: "Embedded gap-fill",
+  },
+  {
+    number: "03",
+    title: "Delivery & transformation advisory",
+    description:
+      "Shorter, focused engagements: cloud/DevOps modernisation, platform consolidation, or diagnosing why a programme is stuck. Advisory-only or hands-on, depending on scope.",
+    tag: "Focused engagements",
+  },
+];
+
 const principles = [
   {
     key: "On quality",
