@@ -330,6 +330,30 @@ function ExperienceTimeline() {
   );
 }
 
+function WaysToWork() {
+  return (
+    <section id="engagements" className="section-band engagements-band">
+      <div className="page-shell">
+        <SectionHeading
+          eyebrow="Engagement models"
+          title="Ways to work with me"
+          intro="Three ways to bring this experience into your organisation — depending on what your teams need and for how long."
+        />
+        <div className="engagement-grid">
+          {engagementModels.map((item) => (
+            <article className="engagement-card reveal" key={item.number}>
+              <div className="card-index">{item.number}</div>
+              <h3>{item.title}</h3>
+              <p>{item.description}</p>
+              <span className="text-tag">{item.tag}</span>
+            </article>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
 function Principles() {
   return (
     <section id="principles" className="section-band">
