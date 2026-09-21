@@ -481,6 +481,7 @@ export function Portfolio() {
         <Hero />
         <OperatingModel />
         <ExperienceTimeline />
+        <WaysToWork />
         <Principles />
         <Skills />
         <Learning />
