@@ -180,6 +180,13 @@ const learning = [
       "Relocating to the Netherlands isn’t just a career move for me. I’m actively learning Dutch and investing time in understanding the culture, because building trust and leading teams starts with understanding the people you work with.",
     status: "A2 → B1 in progress",
   },
+  {
+    meta: "mentoring · adplist · people_development",
+    title: "Mentoring engineers and technology professionals and managers",
+    description:
+      "I mentor on ADPList — mostly around: career guidance, career transitions into management / engineering leadership focus. It's the same \"build people, metrics will follow\" belief from my leadership work, just applied outside a company structure.",
+    status: "Ongoing",
+  },
 ];
 
 const qualities = ["Supportive", "Trustworthy", "Inspiring", "Collaborative", "Empathetic", "Resilient", "Strategic", "Approachable"];
@@ -428,20 +435,45 @@ function PeerWords() {
   );
 }
 
+const contactPaths = [
+  {
+    title: "Full-time roles",
+    description:
+      "Senior Engineering Manager / Director-level roles where I can build teams, own delivery, and lead through growth or transformation.",
+  },
+  {
+    title: "Consulting & interim engagements",
+    description:
+      "Available through Axis Tech Consulting for interim engineering leadership, delivery transformation advisory, and engineering org design. Project or fractional, defined scope or open-ended.",
+  },
+  {
+    title: "Peer conversations",
+    description:
+      "Always happy to talk engineering culture, AI adoption, or leading teams in a new market. These are worth having regardless of what's next.",
+  },
+];
+
 function Contact() {
   return (
     <section id="contact" className="contact-section">
       <div className="page-shell contact-layout">
         <div className="contact-copy reveal">
           <p className="eyebrow">Contact</p>
-          <h2>Let’s talk about the work.</h2>
-          <p>Based in the Netherlands. Open to senior engineering leadership roles where I can bring my experience in building high-performing teams, delivering complex technology programmes, and leading engineering organisations through growth and transformation.</p>
-          <p>Also happy to talk to peers — engineering culture, AI adoption, leadership at scale, building teams in new markets. These are conversations worth having.</p>
+          <h2>Let’s talk about the work</h2>
+          <p>Based in the Netherlands, currently working as an independent consultant — and open to the right full-time role.</p>
         </div>
-        <div className="contact-actions reveal">
-          <a href="mailto:shruthiks85@gmail.com" className="contact-link"><span><small>Email</small>shruthiks85@gmail.com</span><ArrowUpRight aria-hidden="true" /></a>
-          <a href="https://www.linkedin.com/in/shruthi-sridhara-02396010/" target="_blank" rel="noreferrer" className="contact-link"><span><small>LinkedIn</small>Connect with me</span><ArrowUpRight aria-hidden="true" /></a>
+        <div className="contact-paths reveal">
+          {contactPaths.map((path) => (
+            <article className="contact-path" key={path.title}>
+              <h3>{path.title}</h3>
+              <p>{path.description}</p>
+            </article>
+          ))}
         </div>
+      </div>
+      <div className="page-shell contact-actions reveal">
+        <a href="mailto:shruthiks85@gmail.com" className="contact-link"><span><small>Email</small>shruthiks85@gmail.com</span><ArrowUpRight aria-hidden="true" /></a>
+        <a href="https://www.linkedin.com/in/shruthi-sridhara-02396010/" target="_blank" rel="noreferrer" className="contact-link"><span><small>LinkedIn</small>Connect with me</span><ArrowUpRight aria-hidden="true" /></a>
       </div>
     </section>
   );
@@ -488,7 +520,7 @@ export function Portfolio() {
         <PeerWords />
         <Contact />
       </main>
-      <footer className="site-footer"><div className="page-shell"><p>© 2026 Shruthi Sridhara · Netherlands</p><span><i aria-hidden="true" /> Open to opportunities</span></div></footer>
+      <footer className="site-footer"><div className="page-shell"><p>© 2026 Shruthi Sridhara · Netherlands</p><span><i aria-hidden="true" /> Open to consulting & full-time roles</span></div></footer>
       <BackToTop />
     </div>
   );
