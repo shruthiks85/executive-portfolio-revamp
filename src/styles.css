@@ -224,6 +224,7 @@ a { color: inherit; }
   .metric:nth-child(3) { padding-left: 0; }
   .section-heading { grid-template-columns: 1fr; }
   .operating-grid, .skills-grid { grid-template-columns: 1fr 1fr; }
+  .engagement-grid { grid-template-columns: 1fr; }
   .principles-layout { grid-template-columns: 1fr; }
   .principles-layout .section-heading { position: static; }
   .peer-layout, .contact-layout { grid-template-columns: 1fr; }
@@ -240,6 +241,7 @@ a { color: inherit; }
   .section-heading { margin-bottom: 2.5rem; }
   .operating-grid, .skills-grid, .learning-grid { grid-template-columns: 1fr; }
   .operating-card { min-height: 280px; }
+  .engagement-card { padding: 1.4rem; }
   .timeline-item { grid-template-columns: 1fr; gap: 1rem; padding-left: 1.75rem; }
   .project-card, .learning-card { padding: 1.4rem; }
   .principle { grid-template-columns: 2rem 1fr; }
