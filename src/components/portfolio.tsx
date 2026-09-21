@@ -16,6 +16,7 @@ import { Button } from "@/components/ui/button";
 const navItems = [
   { label: "About", href: "#about" },
   { label: "Experience", href: "#experience" },
+  { label: "Ways to work", href: "#engagements" },
   { label: "Principles", href: "#principles" },
   { label: "Learning", href: "#learning" },
   { label: "Contact", href: "#contact" },
@@ -100,6 +101,30 @@ const experience = [
     description:
       "Stepped into a technical leadership gap on a live project — took ownership of direction for a 7-member team, drove React and responsive design adoption, and delivered a production-ready platform across two market segments on a new technology stack.",
     result: "First mobile platform for client · team self-taught React on a live project",
+  },
+];
+
+const engagementModels = [
+  {
+    number: "01",
+    title: "Full-time leadership",
+    description:
+      "Own an engineering org end-to-end: hiring, delivery, culture, roadmap. Best fit for teams building long-term technical and people capability.",
+    tag: "Long-term capability",
+  },
+  {
+    number: "02",
+    title: "Interim / fractional leadership",
+    description:
+      "Step into a gap — a departed manager, a stalled programme, a team scaling faster than its structure. Defined engagement, embedded like a full-time leader.",
+    tag: "Embedded gap-fill",
+  },
+  {
+    number: "03",
+    title: "Delivery & transformation advisory",
+    description:
+      "Shorter, focused engagements: cloud/DevOps modernisation, platform consolidation, or diagnosing why a programme is stuck. Advisory-only or hands-on, depending on scope.",
+    tag: "Focused engagements",
   },
 ];
 
@@ -305,6 +330,30 @@ function ExperienceTimeline() {
   );
 }
 
+function WaysToWork() {
+  return (
+    <section id="engagements" className="section-band engagements-band">
+      <div className="page-shell">
+        <SectionHeading
+          eyebrow="Engagement models"
+          title="Ways to work with me"
+          intro="Three ways to bring this experience into your organisation — depending on what your teams need and for how long."
+        />
+        <div className="engagement-grid">
+          {engagementModels.map((item) => (
+            <article className="engagement-card reveal" key={item.number}>
+              <div className="card-index">{item.number}</div>
+              <h3>{item.title}</h3>
+              <p>{item.description}</p>
+              <span className="text-tag">{item.tag}</span>
+            </article>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
 function Principles() {
   return (
     <section id="principles" className="section-band">
@@ -432,6 +481,7 @@ export function Portfolio() {
         <Hero />
         <OperatingModel />
         <ExperienceTimeline />
+        <WaysToWork />
         <Principles />
         <Skills />
         <Learning />
