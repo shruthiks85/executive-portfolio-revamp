@@ -59,6 +59,10 @@
   --nav-glass: oklch(0.99 0.003 255 / 90%);
   --accent-soft: oklch(0.91 0.035 245);
   --accent-deep: oklch(0.34 0.07 245);
+  --cloud-leadership: oklch(0.86 0.09 240);
+  --cloud-personal: oklch(0.82 0.02 250);
+  --cloud-impact: oklch(0.72 0.075 245);
+  --cloud-quote: oklch(0.64 0.03 250);
   --success: oklch(0.55 0.12 155);
   --shadow-card: 0 18px 48px oklch(0.22 0.025 255 / 7%);
   --shadow-hover: 0 22px 58px oklch(0.22 0.025 255 / 11%);
@@ -120,7 +124,7 @@ a { color: inherit; }
 .section-heading .eyebrow { grid-column: 1 / -1; }
 .section-heading h2, .peer-copy h2, .contact-copy h2 { margin: 0; font-size: clamp(2rem, 4vw, 3.35rem); font-weight: 400; line-height: 1.1; letter-spacing: 0; }
 .section-intro { max-width: 520px; margin: 0; color: var(--muted-foreground); line-height: 1.7; }
-.section-heading-full h2 { grid-column: 1 / -1; max-width: none; font-size: clamp(1.9rem, 3.7vw, 2.85rem); text-wrap: balance; }
+.section-heading-full h2, .peer-copy h2 { grid-column: 1 / -1; max-width: none; font-size: clamp(1.9rem, 3.7vw, 2.85rem); text-wrap: balance; }
 
 .operating-grid { display: grid; grid-template-columns: repeat(3, 1fr); border-top: 1px solid var(--border); border-left: 1px solid var(--border); }
 .operating-card { display: flex; flex-direction: column; min-height: 310px; padding: 2rem; border-right: 1px solid var(--border); border-bottom: 1px solid var(--border); background: var(--card); transition: transform 220ms ease, box-shadow 220ms ease; }

@@ -480,8 +480,25 @@ function PeerWords() {
           <h2 id="peer-title">What my teams and peers said about my work</h2>
           <p>Combined from farewell messages from my last role and recommendations over the years, these are the qualities that came up most often.</p>
         </Reveal>
-        <div className="quality-cloud reveal" aria-label="Leadership qualities">
-          {qualities.map((quality, index) => <span className={`quality quality-${index + 1}`} key={quality}>{quality}</span>)}
+        <div className="peer-visual">
+          <p className="peer-cloud-note">What the team wrote when I left — farewell messages, unprompted.</p>
+          <svg className="peer-cloud-svg reveal" viewBox="0 95 640 360" aria-hidden="true" focusable="false">
+            {peerWords.map((word) => (
+              <text key={word.text} className={`tone-${word.tone}`} x={word.x} y={word.y} textAnchor="middle" fontSize={word.size} fontWeight={word.weight} style={cloudStyle(word)}>
+                {word.text}
+              </text>
+            ))}
+          </svg>
+          <ul className="peer-words-list" aria-label="Qualities my teams and peers used about my work">
+            {peerWords.map((word) => (
+              <li key={word.text} className={`quality quality-${peerTier(word.size)} tone-${word.tone}`}>{word.text}</li>
+            ))}
+          </ul>
+          <ul className="peer-legend" aria-label="Word cloud key">
+            {peerLegend.map((item) => (
+              <li key={item.label} className={item.swatch}>{item.label}</li>
+            ))}
+          </ul>
         </div>
       </div>
     </section>
