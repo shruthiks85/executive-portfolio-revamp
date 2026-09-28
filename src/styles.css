@@ -258,7 +258,7 @@ a { color: inherit; }
   .metric:nth-child(n+3) { border-top: 1px solid var(--border); }
   .metric:nth-child(3) { padding-left: 0; }
   .section-heading { grid-template-columns: 1fr; }
-  .section-heading-full h2 { font-size: clamp(1.6rem, 3.4vw, 1.82rem); }
+  .section-heading-full h2, .peer-copy h2 { font-size: clamp(1.6rem, 3.4vw, 1.82rem); }
   .operating-grid, .skills-grid { grid-template-columns: 1fr 1fr; }
   .learning-grid { grid-template-columns: 1fr; }
   .engagement-grid { grid-template-columns: 1fr; }
@@ -284,8 +284,6 @@ a { color: inherit; }
   .timeline-item { grid-template-columns: 1fr; gap: 1rem; padding-left: 1.75rem; }
   .project-card, .learning-card { padding: 1.4rem; }
   .principle { grid-template-columns: 2rem 1fr; }
-  .quality-cloud { min-height: 280px; padding: 1.5rem; }
-  .quality, .quality-1, .quality-2, .quality-3, .quality-5 { font-size: .88rem; }
   .site-footer .page-shell { flex-direction: column; }
 }
 
@@ -293,4 +291,5 @@ a { color: inherit; }
   html { scroll-behavior: auto; }
   *, *::before, *::after { transition-duration: .01ms !important; animation-duration: .01ms !important; }
   .reveal { opacity: 1; transform: none; }
+  .peer-cloud-svg text { opacity: var(--o, 1); }
 }
