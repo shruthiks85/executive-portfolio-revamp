@@ -1,4 +1,5 @@
 import { useEffect, useState, type ReactNode } from "react";
+import portraitAsset from "@/assets/shruthi-portrait.png.asset.json";
 import {
   ArrowUp,
   ArrowUpRight,
@@ -187,6 +188,13 @@ const learning = [
       "I mentor on ADPList — mostly around: career guidance, career transitions into management / engineering leadership focus. It's the same \"build people, metrics will follow\" belief from my leadership work, just applied outside a company structure.",
     status: "Ongoing",
   },
+  {
+    meta: "safe · finance · cloud_architecture",
+    title: "Building the business side of engineering leadership",
+    description:
+      "Used the transition between roles to formalise skills that sit alongside technical delivery — SAFe Product Owner/Product Manager certification, cloud-native architecture fundamentals, and finance for non-financial managers. Each closes a gap between engineering decisions and the business conversations around them.",
+    status: "Completed",
+  },
 ];
 
 const qualities = ["Supportive", "Trustworthy", "Inspiring", "Collaborative", "Empathetic", "Resilient", "Strategic", "Approachable"];
@@ -267,7 +275,7 @@ function Hero() {
     <section id="top" className="hero-section">
       <div className="page-shell hero-layout">
         <div className="hero-copy">
-          <p className="availability"><span aria-hidden="true" /> Engineering leadership · Netherlands · Open to work</p>
+          <p className="availability"><span aria-hidden="true" /> Engineering Leadership · Netherlands · Consulting & Full-Time Opportunities</p>
           <h1>I build teams that ship <strong>complex things reliably.</strong></h1>
           <p className="hero-intro">
             18 years in software — moving between hands-on architecture and team leadership depending on what the work needs. I stay technically close, build the structures that protect quality under pressure, and grow the engineers around me.
@@ -278,7 +286,7 @@ function Hero() {
           </div>
         </div>
         <aside className="identity-panel" aria-label="Professional profile">
-          <div className="portrait-mark" aria-hidden="true"><span>SS</span></div>
+          <div className="portrait-mark"><img src={portraitAsset.url} alt="Portrait of Shruthi Sridhara" width={1024} height={1536} loading="eager" /></div>
           <div>
             <p className="identity-name">Shruthi Sridhara</p>
             <p className="identity-role">Senior Engineering Leader</p>
@@ -288,6 +296,9 @@ function Hero() {
       </div>
       <div className="page-shell metrics-grid" aria-label="Leadership impact">
         {metrics.map((metric) => <div className="metric" key={metric.label}><strong>{metric.value}</strong><span>{metric.label}</span></div>)}
+      </div>
+      <div className="page-shell currently-line reveal">
+        <p><strong>Currently:</strong> Independent Consultant at Axis Tech Consulting — interim leadership & delivery advisory, following 8+ years at Collins Aerospace.</p>
       </div>
     </section>
   );
