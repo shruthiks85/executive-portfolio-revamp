@@ -201,7 +201,7 @@ const qualities = ["Supportive", "Trustworthy", "Inspiring", "Collaborative", "E
 
 function SectionHeading({ eyebrow, title, intro }: { eyebrow: string; title: string; intro?: string }) {
   return (
-    <header className="section-heading reveal">
+    <header className={`section-heading reveal${intro ? "" : " section-heading-full"}`}>
       <p className="eyebrow">{eyebrow}</p>
       <h2>{title}</h2>
       {intro ? <p className="section-intro">{intro}</p> : null}
