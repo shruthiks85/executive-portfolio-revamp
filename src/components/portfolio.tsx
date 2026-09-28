@@ -1,4 +1,4 @@
-import { useEffect, useState, type ReactNode } from "react";
+import { useEffect, useState, type CSSProperties, type ReactNode } from "react";
 import portraitAsset from "@/assets/shruthi-portrait.png.asset.json";
 import {
   ArrowUp,
@@ -197,7 +197,49 @@ const learning = [
   },
 ];
 
-const qualities = ["Supportive", "Trustworthy", "Inspiring", "Collaborative", "Empathetic", "Resilient", "Strategic", "Approachable"];
+type PeerTone = "leadership" | "personal" | "impact" | "quote";
+
+type PeerWord = { text: string; x: number; y: number; size: number; weight: number; tone: PeerTone; opacity: number; delay: number };
+
+// Word cloud drawn from farewell messages and recommendations — size = strength of signal.
+const peerWords: PeerWord[] = [
+  { text: "calm", x: 320, y: 130, size: 38, weight: 600, tone: "leadership", opacity: 0.95, delay: 0.05 },
+  { text: "approachable", x: 180, y: 175, size: 34, weight: 600, tone: "leadership", opacity: 0.9, delay: 0.1 },
+  { text: "inspiring", x: 460, y: 175, size: 32, weight: 600, tone: "leadership", opacity: 0.9, delay: 0.15 },
+  { text: "composed", x: 100, y: 240, size: 26, weight: 500, tone: "leadership", opacity: 0.8, delay: 0.2 },
+  { text: "mentor", x: 300, y: 225, size: 28, weight: 500, tone: "personal", opacity: 0.9, delay: 0.25 },
+  { text: "trusted her team", x: 480, y: 240, size: 24, weight: 500, tone: "leadership", opacity: 0.8, delay: 0.3 },
+  { text: "patient", x: 80, y: 290, size: 19, weight: 400, tone: "personal", opacity: 0.85, delay: 0.35 },
+  { text: "always there", x: 210, y: 275, size: 21, weight: 400, tone: "leadership", opacity: 0.8, delay: 0.38 },
+  { text: "kind", x: 400, y: 275, size: 20, weight: 400, tone: "personal", opacity: 0.8, delay: 0.41 },
+  { text: "positive influence", x: 540, y: 290, size: 18, weight: 400, tone: "leadership", opacity: 0.75, delay: 0.44 },
+  { text: "role model", x: 60, y: 335, size: 17, weight: 400, tone: "impact", opacity: 0.9, delay: 0.47 },
+  { text: "genuine", x: 185, y: 320, size: 16, weight: 400, tone: "personal", opacity: 0.75, delay: 0.5 },
+  { text: "never in a bad mood", x: 310, y: 315, size: 18, weight: 400, tone: "leadership", opacity: 0.7, delay: 0.52 },
+  { text: "warm", x: 460, y: 320, size: 16, weight: 400, tone: "personal", opacity: 0.75, delay: 0.54 },
+  { text: "irreplaceable", x: 570, y: 335, size: 15, weight: 400, tone: "impact", opacity: 0.85, delay: 0.56 },
+  { text: "gave importance to wellbeing", x: 90, y: 375, size: 14, weight: 300, tone: "quote", opacity: 0.9, delay: 0.58 },
+  { text: "lasting impact", x: 270, y: 360, size: 15, weight: 300, tone: "impact", opacity: 0.8, delay: 0.6 },
+  { text: "cheering everyone on", x: 430, y: 360, size: 14, weight: 300, tone: "quote", opacity: 0.85, delay: 0.62 },
+  { text: "shadow leader", x: 570, y: 375, size: 13, weight: 300, tone: "impact", opacity: 0.8, delay: 0.64 },
+  { text: "redefined what a manager is", x: 80, y: 410, size: 12, weight: 300, tone: "quote", opacity: 0.78, delay: 0.66 },
+  { text: "support from day one", x: 255, y: 400, size: 13, weight: 300, tone: "quote", opacity: 0.75, delay: 0.68 },
+  { text: "encouragement a true gift", x: 400, y: 400, size: 12, weight: 300, tone: "impact", opacity: 0.78, delay: 0.7 },
+  { text: "women hero leader", x: 560, y: 410, size: 12, weight: 300, tone: "quote", opacity: 0.75, delay: 0.72 },
+  { text: "deeply missed", x: 160, y: 440, size: 11, weight: 300, tone: "quote", opacity: 0.9, delay: 0.74 },
+  { text: "patiently guided every single time", x: 320, y: 445, size: 11, weight: 300, tone: "quote", opacity: 0.9, delay: 0.76 },
+  { text: "brought positivity to the org", x: 490, y: 440, size: 11, weight: 300, tone: "quote", opacity: 0.9, delay: 0.78 },
+];
+
+const peerLegend = [
+  { label: "Leadership qualities", swatch: "sw-leadership" },
+  { label: "Personal qualities", swatch: "sw-personal" },
+  { label: "Impact", swatch: "sw-impact" },
+  { label: "Quoted lines", swatch: "sw-quote" },
+];
+
+const peerTier = (size: number) => (size >= 30 ? 1 : size >= 24 ? 2 : size >= 18 ? 3 : size >= 15 ? 4 : 5);
+const cloudStyle = (word: PeerWord) => ({ "--d": `${word.delay}s`, "--o": word.opacity }) as CSSProperties;
 
 function SectionHeading({ eyebrow, title, intro }: { eyebrow: string; title: string; intro?: string }) {
   return (
