@@ -41,7 +41,7 @@ const operatingModel = [
     number: "02",
     title: "Forward-deployed by default",
     description:
-      "I work where the problem is — inside the customer's environment, on the shop floor, alongside the product team. Co-building from problem definition through to production, not handing over[...]
+      "I work where the problem is — inside the customer's environment, on the shop floor, alongside the product team. Co-building from problem definition through to production, not handing over the fence.",
     tag: "Customer-embedded",
   },
   {
@@ -62,7 +62,7 @@ const operatingModel = [
     number: "05",
     title: "Evolving with technology, leading through change",
     description:
-      "Navigated multiple waves of technology evolution — enterprise modernization, cloud adoption to today's AI transformation — turning emerging capabilities into practical engineering outco[...]
+      "Navigated multiple waves of technology evolution — enterprise modernization, cloud adoption to today's AI transformation — turning emerging capabilities into practical engineering outcomes.",
     tag: "Technology leadership",
   },
   {
@@ -81,7 +81,7 @@ const experience = [
     context: ["Aerospace manufacturing", "MES", "Digital transformation", "Global programme"],
     title: "First-ever global MES implementation — built from the ground up",
     description:
-      "Led delivery of a $50M paper-to-digital programme with no prior MES foundation at site. Partnered with iBaseT (MES ISV) on Solumina platform integration, designed end-to-end execution, coor[...]
+      "Led delivery of a $50M paper-to-digital programme with no prior MES foundation at site. Partnered with iBaseT (MES ISV) on Solumina platform integration, designed end-to-end execution, coordinated 40-person delivery team across US, Europe, Asia.",
     result: "30% efficiency gain · global delivery model · US, Europe, Asia",
   },
   {
@@ -90,7 +90,7 @@ const experience = [
     context: ["Cloud platform", "AWS", "Azure", "Post-merger"],
     title: "Platform scaling for an organisation that doubled in size",
     description:
-      "Drove platform consolidation, AWS and Azure migration supporting post-merger growth from 40,000 to 80,000 employees. Coordinated across architecture, infrastructure and business teams to de[...]
+      "Drove platform consolidation, AWS and Azure migration supporting post-merger growth from 40,000 to 80,000 employees. Coordinated across architecture, infrastructure and business teams to deliver unified cloud foundation.",
     result: "Unified infrastructure live day one · new workstreams opened internally",
   },
   {
@@ -99,7 +99,7 @@ const experience = [
     context: ["E-commerce", "React", "Responsive", "Mobile-first"],
     title: "Walmart's first mobile-compatible e-commerce platform",
     description:
-      "Stepped into a technical leadership gap on a live project — took ownership of direction for a 7-member team, drove React and responsive design adoption, and delivered a production-ready [...]
+      "Stepped into a technical leadership gap on a live project — took ownership of direction for a 7-member team, drove React and responsive design adoption, and delivered a production-ready platform ahead of schedule.",
     result: "First mobile platform for client · team self-taught React on a live project",
   },
 ];
@@ -170,28 +170,28 @@ const learning = [
     meta: "Engineering leadership · AI · Continuous learning",
     title: "Building AI systems to lead AI-enabled teams",
     description:
-      "I'm building a local AI knowledge assistant from first principles — not to create another chatbot, but to understand the engineering decisions behind retrieval, AI-assisted development a[...]
+      "I'm building a local AI knowledge assistant from first principles — not to create another chatbot, but to understand the engineering decisions behind retrieval, AI-assisted development and responsible AI adoption.",
     status: "In progress",
   },
   {
     meta: "Dutch language · Cultural integration",
     title: "Learning the language is part of joining the culture",
     description:
-      "Relocating to the Netherlands isn't just a career move for me. I'm actively learning Dutch and investing time in understanding the culture, because building trust and leading teams starts [...]
+      "Relocating to the Netherlands isn't just a career move for me. I'm actively learning Dutch and investing time in understanding the culture, because building trust and leading teams starts with genuine connection.",
     status: "A2 → B1 in progress",
   },
   {
     meta: "mentoring · adplist · people_development",
     title: "Mentoring engineers and technology professionals and managers",
     description:
-      "I mentor on ADPList — mostly around: career guidance, career transitions into management / engineering leadership focus. It's the same \"build people, metrics will follow\" belief from m[...]
+      "I mentor on ADPList — mostly around: career guidance, career transitions into management / engineering leadership focus. It's the same \"build people, metrics will follow\" belief from my management experience.",
     status: "Ongoing",
   },
   {
     meta: "safe · finance · cloud_architecture",
     title: "Building the business side of engineering leadership",
     description:
-      "Used the transition between roles to formalise skills that sit alongside technical delivery — SAFe Product Owner/Product Manager certification, cloud-native architecture fundamentals, an[...]
+      "Used the transition between roles to formalise skills that sit alongside technical delivery — SAFe Product Owner/Product Manager certification, cloud-native architecture fundamentals, and finance literacy for technology leaders.",
     status: "Completed",
   },
 ];
@@ -319,7 +319,7 @@ function Hero() {
           <p className="availability"><span aria-hidden="true" /> Engineering Leadership · Netherlands · Consulting & Full-Time Opportunities</p>
           <h1>I build teams that ship <strong>complex things reliably.</strong></h1>
           <p className="hero-intro">
-            18 years in software — moving between hands-on architecture and team leadership depending on what the work needs. I stay technically close, build the structures that protect quality[...]
+            18 years in software — moving between hands-on architecture and team leadership depending on what the work needs. I stay technically close, build the structures that protect quality under pressure, and create environments where people can do their best work.
           </p>
           <div className="hero-actions">
             <Button asChild size="lg" className="text-white"><a href="#experience">View selected work <ArrowUpRight /></a></Button>
@@ -349,7 +349,7 @@ function OperatingModel() {
   return (
     <section id="about" className="section-band">
       <div className="page-shell">
-        <SectionHeading eyebrow="Operating model" title="How I work, not just what I've done" intro="Leadership that stays close to the work, creates clarity before urgency, and leaves teams stro[...]
+        <SectionHeading eyebrow="Operating model" title="How I work, not just what I've done" intro="Leadership that stays close to the work, creates clarity before urgency, and leaves teams stronger than I found them." />
         <div className="operating-grid">
           {operatingModel.map((item) => (
             <article className="operating-card reveal" key={item.number}>
@@ -512,7 +512,7 @@ const contactPaths = [
   {
     title: "Consulting & interim engagements",
     description:
-      "Available through Axis Tech Consulting for interim engineering leadership, delivery transformation advisory, and engineering org design. Project or fractional, defined scope or open-ended.[...]
+      "Available through Axis Tech Consulting for interim engineering leadership, delivery transformation advisory, and engineering org design. Project or fractional, defined scope or open-ended.",
   },
   {
     title: "Peer conversations",
@@ -541,7 +541,7 @@ function Contact() {
       </div>
       <div className="page-shell contact-actions reveal">
         <a href="mailto:shruthiks85@gmail.com" className="contact-link"><span><small>Email</small>shruthiks85@gmail.com</span><ArrowUpRight aria-hidden="true" /></a>
-        <a href="https://www.linkedin.com/in/shruthi-sridhara-02396010/" target="_blank" rel="noreferrer" className="contact-link"><span><small>LinkedIn</small>Connect with me</span><ArrowUpRight[...]
+        <a href="https://www.linkedin.com/in/shruthi-sridhara-02396010/" target="_blank" rel="noreferrer" className="contact-link"><span><small>LinkedIn</small>Connect with me</span><ArrowUpRight aria-hidden="true" /></a>
       </div>
     </section>
   );
@@ -588,7 +588,7 @@ export function Portfolio() {
         <PeerWords />
         <Contact />
       </main>
-      <footer className="site-footer"><div className="page-shell"><p>© 2026 Shruthi Sridhara · Netherlands</p><span><i aria-hidden="true" /> Open to consulting & full-time roles</span></div></f[...]
+      <footer className="site-footer"><div className="page-shell"><p>© 2026 Shruthi Sridhara · Netherlands</p><span><i aria-hidden="true" /> Open to consulting & full-time roles</span></div></footer>
       <BackToTop />
     </div>
   );
