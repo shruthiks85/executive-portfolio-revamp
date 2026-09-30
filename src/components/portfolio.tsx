@@ -191,7 +191,7 @@ const learning = [
     meta: "safe · finance · cloud_architecture",
     title: "Building the business side of engineering leadership",
     description:
-      "Used the transition between roles to formalise skills that sit alongside technical delivery — SAFe Product Owner/Product Manager certification, cloud-native architecture fundamentals, and finance literacy for technology leaders.",
+      "Used the transition between roles to formalise skills that sit alongside technical delivery — SAFe Product Owner/Product Manager certification, cloud-native architecture fundamentals, and finance literacy for technology leaders,and deeper PMO/delivery-tooling fluency (ClickUp Expert certification) to support consulting and interim engagements.",
     status: "Completed",
   },
 ];
