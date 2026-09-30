@@ -152,7 +152,7 @@ const principles = [
   {
     key: "On AI",
     lead: "Adopt AI with judgment, accountability, and engineering discipline.",
-    body: "AI is changing how software is built, but not what great engineering requires. The challenge isn't adopting AI — it's adopting it responsibly.",
+    body: "AI is changing how software is built, but not what great engineering requires. The challenge isn't adopting AI — it's adopting it responsibly. This site itself is one small example — built AI-assisted, reviewed and shaped by hand.",
   },
 ];
 
