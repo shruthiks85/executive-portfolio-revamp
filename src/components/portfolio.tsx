@@ -330,7 +330,7 @@ function Hero() {
           <div className="portrait-mark"><img src="/Shruthi_.png" alt="Portrait of Shruthi Sridhara" width={1024} height={1536} loading="eager" /></div>
           <div>
             <p className="identity-name">Shruthi Sridhara</p>
-            <p className="identity-role">Senior Engineering Leader</p>
+            <p className="identity-role">Engineering & Technology Leader</p>
           </div>
           <div className="identity-location"><MapPin aria-hidden="true" /> Netherlands</div>
         </aside>
