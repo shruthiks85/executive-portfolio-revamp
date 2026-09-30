@@ -477,7 +477,9 @@ function PeerWords() {
           <Quote aria-hidden="true" />
           <p className="eyebrow">In their words</p>
           <h2 id="peer-title">What my teams and peers said about my work</h2>
-          <p>Combined from farewell messages from my last role and recommendations over the years, these are the qualities that came up most often.</p>
+          <p style={{ maxWidth: 'fit-content' }}>
+            Combined from farewell messages from my last role and recommendations over the years, these are the qualities that came up most often.
+          </p>
         </Reveal>
         <div className="peer-visual">
           <svg className="peer-cloud-svg reveal" viewBox="0 95 640 360" aria-hidden="true" focusable="false">
@@ -588,7 +590,7 @@ export function Portfolio() {
         <PeerWords />
         <Contact />
       </main>
-      <footer className="site-footer"><div className="page-shell"><p>© 2026 Shruthi Sridhara · Netherlands</p><span><i aria-hidden="true" /> Open to consulting & full-time roles</span><p>Built AI-assisted (Copilot, Lovable) — a small, deliberate exercise in the same judgment described above</p></div></footer>
+      <footer className="site-footer"><div className="page-shell"><p>© 2026 Shruthi Sridhara · Netherlands</p><span><i aria-hidden="true" /> Open to consulting & full-time roles</span><p>*Built AI-assisted (Copilot, Lovable) — a small, deliberate exercise in the same judgment described above</p></div></footer>
       <BackToTop />
     </div>
   );
