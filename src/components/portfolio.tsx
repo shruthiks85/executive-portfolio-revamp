@@ -24,8 +24,8 @@ const navItems = [
 
 const metrics = [
   { value: "18+", label: "Years in software" },
+  { value: "6+", label: "Years in leadership roles" },
   { value: "35", label: "Engineers led at peak" },
-  { value: "7", label: "Promotions in 2 years" },
   { value: "30%", label: "Efficiency gain on $50M programme" },
 ];
 
@@ -158,11 +158,11 @@ const principles = [
 
 const skillGroups = [
   { label: "Engineering leadership", values: ["Team development", "Technical leadership", "Architecture reviews"] },
-  { label: "Delivery", values: ["Global programmes", "Operational excellence", "DevOps"] },
-  { label: "Cloud", values: ["AWS", "Azure", "Platform consolidation"] },
+  { label: "Delivery", values: ["Global programmes", "Operational excellence", "OKR & Roadmap", "Continous Improvement"] },
+  { label: "Cloud & Deployments", values: ["AWS", "Azure", "Platform consolidation", "DevOps", "Kubernetes"] },
   { label: "Product & agile", values: ["SAFe", "Customer-embedded delivery", "Digital transformation"] },
-  { label: "AI", values: ["GitHub Copilot", "Claude", "Responsible AI adoption"] },
-  { label: "Technical foundations", values: ["Java", "JavaScript", ".NET / Xamarin", "ReactJS", "Angular"] },
+  { label: "AI", values: ["GitHub Copilot", "Claude", "Responsible AI adoption", "Automation"] },
+  { label: "Technical foundations", values: ["Java", "JavaScript", ".NET / Xamarin", "ReactJS", "Angular", "Android"] },
 ];
 
 const learning = [
