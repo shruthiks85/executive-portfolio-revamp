@@ -588,7 +588,7 @@ export function Portfolio() {
         <PeerWords />
         <Contact />
       </main>
-      <footer className="site-footer"><div className="page-shell"><p>© 2026 Shruthi Sridhara · Netherlands</p><span><i aria-hidden="true" /> Open to consulting & full-time roles</span></div></footer>
+      <footer className="site-footer"><div className="page-shell"><p>© 2026 Shruthi Sridhara · Netherlands</p><span><i aria-hidden="true" /> Open to consulting & full-time roles</span><p>Built AI-assisted (Copilot, Lovable) — a small, deliberate exercise in the same judgment described above</p></div></footer>
       <BackToTop />
     </div>
   );
