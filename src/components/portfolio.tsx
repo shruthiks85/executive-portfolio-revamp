@@ -322,7 +322,7 @@ function Hero() {
             18 years in software — moving between hands-on architecture and team leadership depending on what the work needs. I stay technically close, build the structures that protect quality under pressure, and create environments where people can do their best work.
           </p>
           <div className="hero-actions">
-            <Button asChild size="lg" className="text-white"><a href="#experience">View selected work <ArrowUpRight /></a></Button>
+            <Button asChild size="lg" variant="outline"><a href="#experience">View selected work <ArrowUpRight /></a></Button>
             <Button asChild size="lg" variant="outline"><a href="mailto:shruthiks85@gmail.com">Start a conversation <Mail /></a></Button>
           </div>
         </div>
