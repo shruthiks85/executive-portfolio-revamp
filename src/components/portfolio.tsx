@@ -339,7 +339,7 @@ function Hero() {
         {metrics.map((metric) => <div className="metric" key={metric.label}><strong>{metric.value}</strong><span>{metric.label}</span></div>)}
       </div>
       <div className="page-shell currently-line reveal">
-        <p><strong>Currently:</strong> Independent Consultant at Axis Tech Consulting — interim leadership & delivery advisory, following 8+ years of program leadership at Collins Aerospace.</p>
+        <p><strong>Currently:</strong> Independent Consultant at Axis Tech Consulting — interim leadership & delivery advisory, following 6+ years of program leadership at Collins Aerospace.</p>
       </div>
     </section>
   );
